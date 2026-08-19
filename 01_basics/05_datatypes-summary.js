@@ -31,3 +31,34 @@ let myObj = {
 const myFunction = function(){
     console.log("hello world")
 }
+
+
+
+
+
+
+
+// ++++++++++++++++++++++++++++++++++
+
+// Stack(primitive)->we will gate a copy of memory
+// Heap(non primitive)->we will get reference from original memory
+let myYoutubename="hiteshchoudharydotcom"
+
+let anothername = myYoutubename
+anothername = "chaiaurcode"
+
+console.log(myYoutubename)
+console.log(anothername);
+
+let userOne ={
+    email:"user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "hitesh@google.com"
+
+console.log(userOne.email);
+
+console.log(userTwo.email);
